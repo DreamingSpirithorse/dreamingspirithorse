@@ -127,21 +127,23 @@ function seallcorsamohka(corsamohkaji){
 
 //vere
 function vere(verezel){
-        vereshh();
+        vereshh(verezel);
+}
+function meow(verezel){
         var vereli = document.getElementById("vere" + verezel);
 		vereli.play();
 		
 		seallcorsamohka(verezel);
 		maamohka(verezel);
 }
-
-function vereshh(){
+function vereshh(moo){
 	var elements = document.getElementsByTagName('audio');
 
 for (var i = 0; i < elements.length; i++) {
     elements[i].pause();
 	elements[i].currentTime = 0;
 }
+    meow(moo);
 }
 //vere
 
