@@ -18,20 +18,38 @@ function BoRayMaa(){
 }
 
 function MaaAboutMe(){
+	var Notaeram = document.createElement("p");
+	var Notaeram2 = document.createElement("p");
+	var Notaeram3 = document.createElement("p");
+	var Notaeram4 = document.createElement("p");
 	var Notaeram5 = document.createElement("p");
 	var Notaeram6 = document.createElement("p");
+var Notaera = document.createTextNode(`meow`);
 
-var Notaera5 = document.createTextNode(`
-Meow. Start of ze great notaera site. calling it brainstorm central atm.  so I obviously need my stuff streamable and purchaseable in nicelooking forms that generate real income and spread.  So Spotify API is on the learn-list.  Symbiosis with a friend also in need of spotify on website.
+var Notaera2 = document.createTextNode(`meow`);
+
+var Notaera3 = document.createTextNode(`meow`);
+
+var Notaera4 = document.createTextNode(`meow`);
+
+var Notaera5 = document.createTextNode(`meow`);
+
+var Notaera6 = document.createTextNode(`meow
 `);
-var Notaera6 = document.createTextNode(`
-The switchy title is fun.  it actually messes with SEO ~which I find silly.  I am thinking twitter api for a companion twitterbot would be good to learn too.
-`);
+Notaeram.appendChild(Notaera);
+Notaeram2.appendChild(Notaera2);
+Notaeram3.appendChild(Notaera3);
+Notaeram4.appendChild(Notaera4);
 Notaeram5.appendChild(Notaera5);
 Notaeram6.appendChild(Notaera6);
 var NotaeraMohka = document.getElementById("NotaeraMo");
+NotaeraMohka.appendChild(Notaeram);
+NotaeraMohka.appendChild(Notaeram2);
+NotaeraMohka.appendChild(Notaeram3);
+NotaeraMohka.appendChild(Notaeram4);
 NotaeraMohka.appendChild(Notaeram5);
 NotaeraMohka.appendChild(Notaeram6);
+
 }
 
 
@@ -61,3 +79,73 @@ function maaTani(){
    Taniklo = TaniTaera.split("@");
 }
 //Lotani
+
+//seallcorsa
+function seallcorsamohka(corsamohkaji){
+	corsamohkaji = corsamohkaji + "mohka.jpg";
+	document.getElementById("BackgroundMohka").src = corsamohkaji;
+	
+	setTimeout(function(){
+    document.getElementById("Background").style.opacity = "0.9";	
+}, 60);
+	setTimeout(function(){
+    document.getElementById("Background").style.opacity = "0.8";	
+}, 120);
+	setTimeout(function(){
+    document.getElementById("Background").style.opacity = "0.7";	
+}, 180);
+	setTimeout(function(){
+    document.getElementById("Background").style.opacity = "0.6";	
+}, 240);
+	setTimeout(function(){
+    document.getElementById("Background").style.opacity = "0.5";	
+}, 320);
+	setTimeout(function(){
+    document.getElementById("Background").style.opacity = "0.4";	
+}, 480);
+	setTimeout(function(){
+    document.getElementById("Background").style.opacity = "0.3";	
+}, 540);
+	setTimeout(function(){
+    document.getElementById("Background").style.opacity = "0.2";	
+}, 600);
+	setTimeout(function(){
+    document.getElementById("Background").style.opacity = "0.1";	
+}, 660);
+	setTimeout(function(){
+    document.getElementById("Background").style.opacity = "0";	
+}, 720);
+	setTimeout(function(){
+    document.getElementById("Background").src = corsamohkaji;
+	document.getElementById("Background").style.opacity = "1.0";	
+}, 720);
+	
+}
+//seallcorsa
+
+
+
+//vere
+function vere(verezel){
+        vereshh();
+        var vereli = document.getElementById("vere" + verezel);
+		vereli.play();
+		
+		seallcorsamohka(verezel);
+		maamohka(verezel);
+}
+
+function vereshh(){
+	var elements = document.getElementsByTagName('audio');
+
+for (var i = 0; i < elements.length; i++) {
+    elements[i].pause();
+	elements[i].currentTime = 0;
+}
+}
+//vere
+
+function maamohka(zel){
+	
+}
+
