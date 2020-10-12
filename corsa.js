@@ -97,8 +97,11 @@ function seallcorsamohka(corsamohkaji){
 function vere(verezel){
         vereshh(verezel);
 }
+var playing = "0";
 function meow(verezel){
+	playing = verezel;
         var vereli = document.getElementById("vere" + verezel);
+		
 		vereli.play();
 		
 		seallcorsamohka(verezel);
@@ -107,12 +110,11 @@ function meow(verezel){
 }
 
 function vereshh(moo){
-	var elements = document.getElementsByTagName('audio');
-
-for (var i = 0; i < elements.length; i++) {
-    elements[i].pause();
-	elements[i].currentTime = 0;
-}
+	if (playing != "0"){
+	var elementa = document.getElementById("vere"+ playing);
+    elementa.pause();
+	elementa.currentTime = 0;
+	}
     meow(moo);
 }
 //vere
