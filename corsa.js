@@ -10,7 +10,6 @@ function BoRayMaa(){
 	LoT = window.innerHeight;
 	window.resizeTo(ScreenWidth,ScreenHeight);
 	
-
 	MaaAboutMe();
 //	verever();
 	Lotani();
@@ -49,44 +48,12 @@ function maaTani(){
 //Lotani
 
 //seallcorsa
+var mmohka;
+var premohka = "mohka";
 function seallcorsamohka(corsamohkaji){
-	corsamohkaji = corsamohkaji + "mohka.jpg";
-	document.getElementById("BackgroundMohka").src = corsamohkaji;
-	
-	setTimeout(function(){
-    document.getElementById("Background").style.opacity = "0.9";	
-}, 60);
-	setTimeout(function(){
-    document.getElementById("Background").style.opacity = "0.8";	
-}, 120);
-	setTimeout(function(){
-    document.getElementById("Background").style.opacity = "0.7";	
-}, 180);
-	setTimeout(function(){
-    document.getElementById("Background").style.opacity = "0.6";	
-}, 240);
-	setTimeout(function(){
-    document.getElementById("Background").style.opacity = "0.5";	
-}, 320);
-	setTimeout(function(){
-    document.getElementById("Background").style.opacity = "0.4";	
-}, 480);
-	setTimeout(function(){
-    document.getElementById("Background").style.opacity = "0.3";	
-}, 540);
-	setTimeout(function(){
-    document.getElementById("Background").style.opacity = "0.2";	
-}, 600);
-	setTimeout(function(){
-    document.getElementById("Background").style.opacity = "0.1";	
-}, 660);
-	setTimeout(function(){
-    document.getElementById("Background").style.opacity = "0";	
-}, 720);
-	setTimeout(function(){
-    document.getElementById("Background").src = corsamohkaji;
-	document.getElementById("Background").style.opacity = "1.0";	
-}, 720);
+	corsamohkaji = corsamohkaji + "mohka";
+	mmohka = document.getElementById(corsamohkaji);
+	document.body.appendChild(mmohka);
 	
 }
 //seallcorsa
@@ -104,7 +71,7 @@ function meow(verezel){
 		
 		vereli.play();
 		
-		seallcorsamohka(verezel);
+	//	seallcorsamohka(verezel);
 		maamohka(verezel);
 		notaeramseall(verezel);
 }
